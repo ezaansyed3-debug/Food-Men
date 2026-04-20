@@ -1,0 +1,540 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Google Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+        "GRAD" 0;
+
+        box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    background-color: orange;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 36px;
+    position: relative;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo a {
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+#spanhead {
+    color: black;
+}
+
+.link {
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    padding: 8px 16px;
+}
+
+.bag i {
+  width: 35px;
+  height: 35px;
+  background: white;
+  color: orange;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bar i {
+    display: none;
+    color: white;
+}
+
+@media (max-width:750px) {
+    ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .nav-link {
+        position: absolute;
+        background-color: orange;
+        top: 63px;
+        width: 100%;
+        left: 0px;
+    }
+
+    .bag {
+        margin-left: 15px;
+    }
+
+    .bar i {
+        display: block;
+    }
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 60px 55px;
+    align-items: center;
+}
+
+#span1 {
+    color: orange;
+}
+
+p {
+    color: grey;
+}
+
+.btn {
+    background-color: orange;
+    padding: 10px 15px;
+    border-radius: 20px;
+    width: 180px;
+}
+
+.btn a {
+    color: white;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width:880px) {
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .right {
+        grid-row: 1/2;
+    }
+}
+
+.zinger {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.explore {
+    text-align: center;
+    color: gray;
+    margin-top: 40px;
+}
+
+.all-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 30px;
+    background-color: white;
+    padding: 40px 20px;
+}
+
+.Card {
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between; 
+    height: 450px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;                   
+}
+
+.Card img{
+     width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card2{
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    height: 450px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;                    
+}
+
+.card2 img{
+     width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card3 img{
+     width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card3{
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    height: 450px;  
+    transition: transform 0.3s ease, box-shadow 0.3s ease;                  
+}
+.Card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+        
+
+}
+.card2:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+
+}
+.card3:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+
+}
+.Ruppess, .Ruppess2, .Ruppess3{
+    text-decoration: none;
+    color: gray;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.ratting, .ratting2, .ratting3{
+    color: orange;
+}
+
+.Order, .Order2, .Order3{
+        text-decoration: none;
+        background-color: orange;
+        font-size: 17px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        color: white;
+        
+}
+
+@media (max-width:750px) {
+    .all-cards{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}
+
+.left img{
+    width: 300px;
+}
+
+.right{
+    margin-left: 20%;
+}
+
+.Healthy{
+     font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.deals {
+    color: gray;
+    margin-bottom: 15px;
+}
+
+.explore-btn {
+    background: orange;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.explore-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 55px;
+}
+
+.explore-left img {
+    width: 450px;
+    border-radius: 12px;
+}
+
+.explore-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.explore-right h2 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.explore-btn {
+    background-color: orange;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 20px;
+    width: fit-content;
+    font-weight: 600;
+}
+
+@media (max-width:750px) {
+     .explore-section {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .explore-left img {
+        width: 100%;
+        border-radius: 12px;
+    }
+
+     .explore-right {
+        align-items: center;
+    }
+
+     .explore-btn {
+        margin: 0 auto; 
+    }
+    
+}
+
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 60px 55px;
+}
+
+.service-card {
+    border: 1px solid #eee;
+    padding: 30px 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon i {
+    color: white;
+    font-size: 22px;
+}
+
+.service-card h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #222;
+}
+
+.service-card a {
+    color: orange;
+    font-weight: 600;
+    margin-top: auto;
+}
+
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width:750px) {
+    .services {
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+    }
+}
+
+.chef-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 55px;
+}
+
+.chef-circle {
+    width: 350px;
+    height: 350px;
+    background: orange;
+    border-radius: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.chef-circle img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.chef-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.chef-right h2 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #222;
+}
+
+.chef-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.chef-list li i {
+    margin-top: 3px;
+    flex-shrink: 0;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .chef-section {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .chef-circle {
+        width: 250px;
+        height: 250px;
+    }
+
+    .chef-list li {
+        text-align: left;
+    }
+}
+
+footer {
+    background: #f9f9f9;
+    padding: 60px 55px 20px 55px;
+    border-top: 1px solid #eee;
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-brand h3 {
+    font-size: 22px;
+    font-weight: 800;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.footer-span {
+    color: black;
+}
+
+.footer-brand p {
+    color: gray;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.footer-col h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 15px;
+}
+   .footer-col ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start; /* ← yeh add karo */
+}
+
+
+.footer-col ul li a {
+    color: gray;
+    font-size: 14px;
+}
+
+.footer-col ul li a:hover {
+    color: orange;
+}
+
+.footer-bottom {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: gray;
+    font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-top {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-top {
+        grid-template-columns: 1fr;
+    }
+}
