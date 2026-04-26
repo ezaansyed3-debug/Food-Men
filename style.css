@@ -59,6 +59,18 @@ a {
   justify-content: center;
 }
 
+.moon i{
+  width: 35px;
+  height: 35px;
+  background: white;
+  color: darkorange;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 .bar i {
     display: none;
     color: white;
@@ -128,10 +140,14 @@ p {
 @media (max-width:880px) {
     .hero {
         grid-template-columns: 1fr;
+        
     }
 
     .right {
         grid-row: 1/2;
+        margin-left: 0;
+        justify-content: center;
+        padding-top: 20px;
     }
 }
 
@@ -400,7 +416,7 @@ p {
 .chef-section {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 60px;
     padding: 60px 55px;
 }
 
@@ -425,6 +441,7 @@ p {
     flex-direction: column;
     gap: 20px;
     flex: 1;
+    text-align: left;
 }
 
 .chef-right h2 {
@@ -437,7 +454,10 @@ p {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
+    align-items: flex-start;
+    color: grey;
+    font-size: 14px;
 }
 
 .chef-list li i {
@@ -502,7 +522,7 @@ footer {
    .footer-col ul {
     flex-direction: column;
     gap: 10px;
-    align-items: flex-start; /* ← yeh add karo */
+    align-items: flex-start;
 }
 
 
@@ -526,15 +546,11 @@ footer {
     font-size: 13px;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
     .footer-top {
         grid-template-columns: 1fr 1fr;
     }
 }
 
-@media (max-width: 480px) {
-    .footer-top {
-        grid-template-columns: 1fr;
-    }
-}
+
